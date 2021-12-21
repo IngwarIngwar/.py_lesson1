@@ -1,10 +1,11 @@
-num_input = int(input('Введите целое положительное число - '))
-num1 = int(num_input) % 10
-num2 = int(num_input) // 10
-num3 = int(num2) % 10
-num4 = int(num2) // 10
-num5 = int(num4) % 10
-while num_input > 0:
-    digit = num1
+num_in = int(input("Введите целое положительное число - "))
+digit = 0
+num = num_in
 
-        break
+while num > 0:
+    if num % 10 > digit:
+        digit = num % 10
+        num = num // 10
+    print(digit)#результат выводит в столбик, как сделать, чтобы только ответ выводил?
+#если большая цифра в конце числа, то оно в столбик бесконечно и выводится, как избежать, как зафиксировать ответ?
+
