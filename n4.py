@@ -1,3 +1,6 @@
-string = input('Введите слова  через пробелы: ').split()
-for i, word in enumerate(string, 1):
-    print(f'{i}, {word [0:10]}')
+my_str = input("Введите строку: ")
+a = my_str.split(' ')
+for i, el in enumerate(a, 1):
+    if len(el) > 10:
+        el = el[0:10]
+    print(f"{i}. - {el}")

@@ -1,8 +1,5 @@
-a = input('Введите числа, разделяя пробелами: ').split()
-i = 0
-print(a)
-while i + 1 < len(a):
-    if i % 2 == 0:
-        a.insert(i, a.pop(i+1))
-    i += 1
-print(a)
+list = input("Введите элементы списка через пробел: ").split()
+
+for i in range(0, len(list)-1, 2):
+    list[i], list[i+1] = list[i+1], list[i]
+print(list)

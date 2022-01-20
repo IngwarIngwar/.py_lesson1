@@ -1,4 +1,9 @@
-data_list = [7, 20.4,'red', (20, 30, True), {'name' : 'Roy', 'address' : 'home'}]
-
-for i, item in enumerate (data_list, 1):
-    print(f"{i}){item} - {type(item)}")
+check_int = 9
+check_float = 5.6
+check_str = "Какой-то текст"
+check_list = ['ж', '6']
+check_tuple = ('ж', '8')
+check_dict = {'Фрукт': 'Яблоко', 'Имя': 'Иван'}
+super_list = [check_int, check_float, check_str, check_list, check_tuple, check_dict]
+for i in super_list:
+    print(f'{i} это {type(i)}')
